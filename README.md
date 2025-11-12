@@ -8,24 +8,31 @@ Open a terminal and do the following preparations:
 
 1.1. Define a Python venv or Conda environment. Here we use annotate as the name for the environment:
 
->python -m venv annotate >conda create -n annotate
+```
+>python -m venv annotate
+>conda create -n annotate
+```
 
 Activate the environment. See the documentation how to activate. 
 After activation the terminal prompt should be prefixed with (annotate).
 Upgrade pip in the new environment.
-
+```
 (annotate)>pip install --upgrade pip
-
+```
 1.2. Install the necessary packages: 
 
 With annotate activated install the requirements:
 
+```
 (annotate)>pip install -r requirements.txt
+```
 
 1.3. Download the spaCy language module:
 The linguistic annotator uses spaCy for which we need to download a language module in our annotate environment:
 
+```
 (annotate)>python -m spacy download en_core_web_sm
+```
 
 1.4. Add jupyter to your environment
 
@@ -35,7 +42,9 @@ To make sure that Jupyter will know the annotate environment, we need to do the 
 
 1.5. Launch Jupter in the annotate environment and open this notebook:
 
+```
 (annotate)>jupyter lab
+```
 
 2. From the command line:
 
