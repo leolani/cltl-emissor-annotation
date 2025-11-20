@@ -26,7 +26,6 @@ def main(emissor: str, scenario: str, model_path: str, model_name = "GO"):
         scenarios = [scenario]
     else:
         scenarios = list(scenario_storage.list_scenarios())
-    scenarios = list(scenario_storage.list_scenarios())
     print("Processing scenarios: ", scenarios)
     for scenario in scenarios:
         print('Processing scenario', scenario)

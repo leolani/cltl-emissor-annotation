@@ -161,7 +161,6 @@ def main(emissor:str, scenario:str, model_path="google-bert/bert-base-multilingu
         scenarios = [scenario]
     else:
         scenarios = list(scenario_storage.list_scenarios())
-    scenarios = list(scenario_storage.list_scenarios())
     print("Processing scenarios: ", scenarios)
     for scenario in scenarios:
         print('Processing scenario', scenario)
