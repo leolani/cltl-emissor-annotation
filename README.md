@@ -52,10 +52,10 @@ Instead of using the notebook, you can also run the scripts from the command lin
 Annotate your scenarios in your emissor folder:
 
 ### CLTL/midas-da-xlmroberta
-(annotate)>python annotate_emissor_conversation_with_dialogue_acts.py --emissor "./data/emissor" --scenario 14a1c27d-dfd2-465b-9ab2-90e9ea91d214
+(annotate)>python annotate_emissor_conversation_with_dialogue_acts.py --emissor "./data/emissor" --scenario 14a1c27d-dfd2-465b-9ab2-90e9ea91d214 --model_path CLTL/midas-da-xlmroberta --model_name MIDAS
 
-## bhadresh-savani/bert-base-go-emotion
-(annotate)>python annotate_emissor_conversation_with_emotions.py --emissor "./data/emissor" --scenario 14a1c27d-dfd2-465b-9ab2-90e9ea91d214 
+## AnasAlokla/multilingual_go_emotions
+(annotate)>python annotate_emissor_conversation_with_emotions.py --emissor "./data/emissor" --scenario 14a1c27d-dfd2-465b-9ab2-90e9ea91d214 --model_path AnasAlokla/multilingual_go_emotions --model_name GO
 
 (annotate)>python annotate_emissor_conversation_with_llm_likelihood.py --emissor "./data/emissor"
 
